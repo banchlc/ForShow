@@ -8,20 +8,18 @@ body{
 }
 
 .header{
-	height: 200px;
+	height:200px;
 	border-bottom: 2px solid;
 }
 
 .title{
 	width: 900px;
-	height: 100px;
-	margin:50px auto;
-}
-
-.discribe{
-	font-size: 16px;
-	display: block;
-	margin-top: 20px;
+	height: 125px;
+	padding-top: 75px;
+	margin: 0 auto;
+	text-align: center;
+	border-left: 2px solid;
+	border-right: 2px solid;
 }
 
 .content{
@@ -32,51 +30,13 @@ body{
 
 .content .box{
 	width: 205px;
-	height: 220px;
-	float: left;
-	margin: 0 60px;
-}
-
-.box-back{
-	position: relative;
-	top: 200px;
-}
-
-.box .icon:hover{
-	transform: scale(1.2) rotate(360deg);
-	-webkit-transform: scale(1.2) rotate(360deg);
-	-o-transform: scale(1.2) rotate(360deg);
-	-moz-transform: scale(1.2) rotate(360deg);
-}
-
-.box-mission .icon{
-	background: url(img/mission.svg) no-repeat center;
-}
-
-.box-play .icon{
-	background: url(img/play.svg) no-repeat center;
-}
-
-.box-touch .icon{
-	background: url(img/touch.svg) no-repeat center;
-}
-
-.box .icon{
-	width: 174px;
-	height: 155px;
-	display: block;
-	margin: 0 auto;
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
-	-o-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-	background-size: 155px 155px
+	margin:60px auto;
 }
 
 .box .button{
 	width: 156px;
 	height: 45px;
-	line-height: 45px;
+	line-height:45px;
 	display: block;
 	margin: 0 auto;
 	font-family: "微软雅黑";
@@ -84,8 +44,8 @@ body{
 	font-weight: bolder;
 	color: rgba(46, 204, 113, 1);
 	text-decoration: none;
+	border: 2px solid rgba(0, 0, 0, 0.7);
 	padding-left: 20px;
-	border: 2px solid rgba(0,0,0,0.7);
 	transition: all 0.4s ease;
 	-webkit-transition: all 0.4s ease;
 	-o-transition: all 0.4s ease;
@@ -110,7 +70,6 @@ body{
 	-moz-transition: all 0.4s ease;
 }
 
-
 .box .line-top{
 	width: 0px;
 	height: 2px;
@@ -120,8 +79,7 @@ body{
 
 .box .button:hover .line-top{
 	width: 180px;
-	left: -2px;
-
+	left:-2px;
 }
 
 .box .line-bottom{
@@ -158,4 +116,73 @@ body{
 .box .button:hover .line-right{
 	height: 49px;
 	top: -2px;
+}
+
+.box-back{
+	position: relative;
+	top: 200px;
+}
+
+.gacha{
+	width: 500px;
+	height:500px;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	font-weight: bolder;
+	color: rgb(255, 255, 255, 1);
+	background: gray;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -250px;
+	display: none;
+}
+
+.gacha .gacha-title{
+	width: 436px;
+	height: 46px;
+	line-height: 46px;
+	text-align: center;
+	border: 2px solid;
+	margin: 20px auto;
+}
+
+.gacha .gacha-content{
+	padding: 20px;
+	width: 396px;
+	height: 296px;
+	border: 2px solid;
+	margin: 20px auto;
+}
+
+.gacha .gacha-confirm{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 2px solid;
+	margin: 20px auto;
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+}
+
+.gacha-confirm:hover{
+	color: #fff;
+	background-color: #000
+}
+
+.footer{
+	border-top:2px solid;
+	width: 100%;
+}
+
+.copyright{
+	text-align: center;
+	display: block;
+	width: 900px;
+	margin:10px auto;
 }
